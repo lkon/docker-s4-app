@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "esnext"
+    ],
+    "module": "es2015",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "noResolve": false,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "removeComments": true,
+    "baseUrl": ".",
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@src/*": [
+        "assets/*",
+        "templates/*"
+      ]
+    },
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "jsx": "preserve",
+    "jsxFactory": "h",
+    "strictFunctionTypes":false
+  },
+//  "include": [
+//    "assets/**/*.ts"
+//  ],
+  "exclude": [
+    "node_modules",
+    "vendor"
+  ]
+}
