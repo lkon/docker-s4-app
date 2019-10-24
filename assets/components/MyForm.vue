@@ -16,10 +16,7 @@ import BaseInput from "@src/components/BaseInput.vue";
 export default class MyForm extends Vue {
 
     // initial data
-    formData = {
-        first_name: 'konina_elena',
-        about: ''
-    }
+
     // beforeCreate() {
     //     console.log('beforeCreate', this)
     // }

@@ -6,11 +6,9 @@
             <h2 id="some-slot">konina</h2>
         </my-header>
         {{ form_row(form.username) }}
-        <my-email :emailData="formData">
-            <template #email="{emailData}">
-{#            {{ form_widget(form.email) }}#}
-                <base-input :name="emailData.first_name"></base-input>
-            </template>
+        <my-email>
+            {{ form_label(form.email) }}
+            <template #email>{{ form_widget(form.email) }}</template>
         </my-email>
         {{ form_row(form.plainPassword.first) }}
         {{ form_row(form.plainPassword.second) }}
